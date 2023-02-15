@@ -1,10 +1,13 @@
-import Login from "./Login.js"
 
+
+
+import Header from "./Components/Header"
+import "./Components/Navbar.css"
 
 function App() {
   return (
     <div className="App">
-      <Login/>
+      <Header/>
     </div>
   );
 }
