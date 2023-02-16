@@ -1,20 +1,12 @@
-
-
 import React, { Component } from "react";
-import Leftnavbar from "./Leftnavbar";
-import Rightnavbar from "./Rightnavbar";
-
-
-
+import Navbar from "./Navbar";
 
 export default class Header extends Component {
   render() {
     return (
       <header className="container">
-          <Leftnavbar />
-          <Rightnavbar />
-        </header>
-    )
+        <Navbar />
+      </header>
+    );
   }
 }
-
