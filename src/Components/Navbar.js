@@ -6,13 +6,22 @@
 import React, { Component } from 'react'
 
 export default class Leftnavbar extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      h1 : ""
+    }
+  }
   render() {
 
     let handleClicked = ()=>{
-       
+       this.state({
+        h1 : "hello"
+       })
     }
     return (
       <>
+      
       <div className="leftbtns">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1200px-W3Schools_logo.svg.png"
@@ -23,6 +32,7 @@ export default class Leftnavbar extends Component {
         <button className=" left">References</button>
         <button className=" left">Exercises</button>
         <button className=" left" >Sign Up</button>
+       
       </div>
       <div className="rightbtns">
           <i className="fa-solid fa-circle-half-stroke"></i>
